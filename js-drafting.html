@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- added comment for github test -->
+<!-- added comment for 2ndgithub test -->
+<!-- added comment for 3rdgithub test -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG via JS</title>
+    <link href="jsdraft.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>MAKING AN SVG WITH JS</h1>
+    <p>It might be a silly project but I am generating an SVG file with JavaScript in a browser.</p>
+    <ul>
+        <li>
+            <del>Work on the line element</del>
+        </li>
+        <li>
+            <del>Work on the path element</del>
+        </li>
+        <li>Possibly work on a couple of the shape elements</li>
+        <li>Gotta do the text crap</li>
+        <li>Figure out some overly complex way to save the raw text.</li>
+        <li>Curves, because not everyone is a cabinet maker</li>
+        <li>
+            <del>AN OFFSET BUTTON! OH YEAH!!!</del> Needs tweaking.
+        </li>
+        <li>Forms and Button instead of prompts? Will it work?</li>
+        <li>Come up with a catchy name as this make stick around</li>
+        <li>Might be time for a nodejs server</li>
+        <!-- <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li> -->
+    </ul>
+
+    <ul>
+        <li><input type="text" placeholder="cx " id="cx">
+            <button type="button" onclick="getInputValue();">Get Value</button>
+        </li>
+        <li><input type="text" placeholder="cy " id="cy">
+            <button type="button" onclick="getInputValue();">Get Value</button>
+        </li>
+        <li><input type="text" placeholder="r " id="r">
+            <button type="button" onclick="getInputValue();">Get Value</button>
+        </li>
+        <li><input type="text" placeholder="rgb " id="rgb">
+            <button type="button" onclick="getInputValue();">Get Value</button>
+        </li>
+        <li><input type="text" placeholder="stroke-width " id="sw">
+            <button type="button" onclick="getInputValue();">Get Value</button>
+        </li>
+        <li></li>
+    </ul>
+    <!-- THIS FORM CAN BE DELETED IF I CAN NOT FIGURE OUT HOW TO MAKE IT WORK -->
+    <!-- <form action="" method="post">
+        <!-- <label for="x">X</label>
+        <input type="text" name="x" id="x" placeholder="x" required>
+        <input type="submit" value="Submit">
+    </form> -->
+    <div id="fun"></div>
+    <input type="text" placeholder="Type " id="inputId">
+    <button type="button" onclick="getInputValue();">Get Value</button>
+    <br>
+    <button type="button" id="line" name="button">Line</button>
+    <button type="button" id="path" name="button">Path</button>
+    <button type="button" id="offset" name="button">Offset</button>
+    <button type="button" id="rect" name="button">Rect</button>
+    <button type="button" id="circle" name="button">Circle</button>
+    <hr>
+    <svg width="1000" height="1000" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" id="svg">
+    </svg>
+    <script src="jsdraft.js"></script>
+</body>
+
+</html>
