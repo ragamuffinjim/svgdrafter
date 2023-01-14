@@ -19,4 +19,5 @@ JavaScript in a browser.
 ## To use:
 
 For the time being just click one of the buttons and answer the prompts.
+
 The image you have drawn will appear below the line.
