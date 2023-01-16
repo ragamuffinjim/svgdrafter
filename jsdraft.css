@@ -1,9 +1,19 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 h1 {
     text-align: center;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+svg {
+    border: 1em black;
 }
 /* added comment for github test */
 /* added comment for 2ndgithub test */
