@@ -12,9 +12,8 @@ ul {
     list-style-type: none;
 }
 
-svg {
-    border: 1em black;
+#window {
+    width: 100%;
+    height: 100%;
+    border: 5em black;
 }
-/* added comment for github test */
-/* added comment for 2ndgithub test */
-/* added comment for rddgithub test */
