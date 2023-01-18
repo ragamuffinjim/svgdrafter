@@ -12,7 +12,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -47,14 +46,35 @@
     <p>For the time being just click on one of the buttons below and answer the prompts.</p>
     <p>The image you have drawn will appear below the line.</p>
 
-    <!-- <ul>
-        <li><input type="text" placeholder="cx " id="cx">
+
+
+    <ul>
+        <!-- <li><input type="text" placeholder="cx " id="cx">
             <button type="button" onclick="getInputValue();">Get Value</button>
+        </li> -->
+        <li>
+            <label for="cy">CY</label>
+            <input type="text" placeholder="cy " id="cy">
+            <button type="button" name="cy" onclick="getInputValue();">Get Value</button>
+            <p id="demo"></p>
+            <script>
+                function getInputValue() {
+                    // Selecting the input element and get its value 
+                    let x = document.getElementById("cy").value;
+                    // Displaying the value
+                    console.log(x);
+                }
+            </script>
+            <!-- <script>
+
+                // Here the value is stored in new variable x 
+                function myFunction() {
+                    var x = document.getElementById("cy").value;
+                    document.getElementById("demo").innerHTML = x;
+                }
+            </script> -->
         </li>
-        <li><input type="text" placeholder="cy " id="cy">
-            <button type="button" onclick="getInputValue();">Get Value</button>
-        </li>
-        <li><input type="text" placeholder="r " id="r">
+        <!-- <li><input type="text" placeholder="r " id="r">
             <button type="button" onclick="getInputValue();">Get Value</button>
         </li>
         <li><input type="text" placeholder="rgb " id="rgb">
@@ -63,8 +83,8 @@
         <li><input type="text" placeholder="stroke-width " id="sw">
             <button type="button" onclick="getInputValue();">Get Value</button>
         </li>
-        <li></li>
-    </ul> -->
+        <li></li> -->
+    </ul>
     <!-- THIS FORM CAN BE DELETED IF I CAN NOT FIGURE OUT HOW TO MAKE IT WORK -->
     <!-- <form action="" method="post">
         <!-- <label for="x">X</label>
@@ -80,9 +100,13 @@
     <button type="button" id="offset" name="button">Offset</button>
     <button type="button" id="rect" name="button">Rect</button>
     <button type="button" id="circle" name="button">Circle</button>
+    <br>
+    <button onclick="window.print()">Print this page</button>
     <hr>
-    <svg width="1000" height="1000" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" id="svg">
-    </svg>
+    <div id="window">
+        <svg width="1000" height="1000" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" id="svg">
+        </svg>
+    </div>
     <script src="jsdraft.js"></script>
 </body>
 
